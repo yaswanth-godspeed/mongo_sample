@@ -1,0 +1,5 @@
+summary: Fetch many User
+tasks:
+  - id: mongo_user_search
+    fn: datasource.mongo.User.findMany
+    args: {}

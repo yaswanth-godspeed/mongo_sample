@@ -1,0 +1,7 @@
+summary: Delete User
+tasks:
+  - id: mongo_user_delete
+    fn: datasource.mongo.User.delete
+    args:
+      where:
+        id: <% inputs.params.id %>

@@ -1,0 +1,33 @@
+User:
+  type: object
+  properties:
+    createdAt:
+      type: string
+      format: date-time
+    email:
+      type: string
+    name:
+      type: string
+      nullable: true
+    role:
+      type: string
+      default: USER
+      enum:
+        - USER
+        - ADMIN
+Post:
+  type: object
+  properties:
+    createdAt:
+      type: string
+      format: date-time
+    updatedAt:
+      type: string
+      format: date-time
+    published:
+      type: boolean
+      default: false
+    title:
+      type: string
+    authorId:
+      type: string
