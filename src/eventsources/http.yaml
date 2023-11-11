@@ -1,2 +1,8 @@
 type: express
 port: 3000
+docs:
+  endpoint: /
+jwt:
+  iss: yaswanth
+  aud: yaswanth
+  secretOrKey: yaswanth
